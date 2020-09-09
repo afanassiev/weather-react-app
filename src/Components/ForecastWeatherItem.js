@@ -29,9 +29,6 @@ export default function ForecastWeatherItem(props) {
             <ListItemText className={classes.listItem}>
               {Math.round(props.data.main.temp)}°C, feels like {Math.round(props.data.main.feels_like)}°C
             </ListItemText>
-            {/*<ListItemText className={classes.listItem}>*/}
-            {/*  Pressure: {props.data.main.pressure}*/}
-            {/*</ListItemText>*/}
             <ListItemText className={classes.listItem}>
               Humidity: {props.data.main.humidity}%
             </ListItemText>

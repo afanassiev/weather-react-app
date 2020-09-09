@@ -5,8 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
 import {makeStyles} from "@material-ui/core/styles";
-import Date from "./DateInfo";
-import {ListItem} from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -32,22 +30,15 @@ export default function CurrentWeather(props) {
   return (
     <Card className={classes.root}>
       <CardContent>
-        {/*<Typography className={classes.title} color="textSecondary" gutterBottom>*/}
-        {/*  Date*/}
-        {/*</Typography>*/}
         <Typography variant="h5" component="h2">
           {props.data.city}
         </Typography>
-        {/*<Date*/}
-        {/*  date={props.data.date}*/}
-        {/*/>*/}
         <Typography variant="h4" component="h4">
           {Math.round(props.data.temp)} °C
           <Typography className={classes.pos} color="textSecondary">
             {props.data.description}
           </Typography>
           <br />
-
         </Typography>
       </CardContent>
       <CardActions>

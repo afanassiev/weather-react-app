@@ -14,9 +14,6 @@ const useStyles = makeStyles((theme) => ({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  // width: '100%',
-  //  maxHeight: '70px',
-  //  position: 'fixed',
    overflow: 'scroll'
  },
  paper: {

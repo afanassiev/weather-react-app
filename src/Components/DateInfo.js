@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import Typography from "@material-ui/core/Typography";
-import {ListItem} from "@material-ui/core";
 
 export default function DateInfo(props) {
   let days = [
@@ -12,7 +11,6 @@ export default function DateInfo(props) {
     "Friday",
     "Saturday"
   ];
-  // let day = days[props.date.getDay()];
 
   let day = props.date;
   let weekDay = new Date(day * 1000)
